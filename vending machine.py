@@ -10,6 +10,7 @@
 # Skills practiced: loops, input(), conditionals, lists/dictionaries, sum(), print formatting
 print("this ismy vending machine application")
 print("my vending machine")
+print("this is new line")
 
 vending_items = {
     1: ("Chips", 1.50),
