@@ -9,6 +9,7 @@
 # Total cost
 # Skills practiced: loops, input(), conditionals, lists/dictionaries, sum(), print formatting
 print("this ismy vending machine application")
+print("my vending machine")
 
 vending_items = {
     1: ("Chips", 1.50),
