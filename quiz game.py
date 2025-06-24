@@ -23,7 +23,7 @@ quiz = [
 score = 0
 wrong_answers = []
 
-print("🎯 Welcome to the Quiz Game!")
+print(" Welcome to the Quiz Game!")
 print("Answer the following questions:\n")
 
 # Ask each question
@@ -31,21 +31,21 @@ for i, q in enumerate(quiz, 1):
     user_answer = input(f"{i}. {q['question']} ").strip().lower()
     correct_answer = q['answer']
     if user_answer == correct_answer:
-        print("✅ Correct!\n")
+        print("Correct!\n")
         score += 1
     else:
-        print(f"❌ Wrong. The correct answer will be shown at the end.\n")
+        print(f" Wrong. The correct answer will be shown at the end.\n")
         wrong_answers.append({"question": q['question'], "your_answer": user_answer, "correct_answer": correct_answer})
 
 # Show final score
-print(f"🏁 Quiz Complete! Your Score: {score}/{len(quiz)}")
+print(f" Quiz Complete! Your Score: {score}/{len(quiz)}")
 
 # Show correct answers for wrong questions
 if wrong_answers:
-    print("\n📘 Review of Incorrect Answers:")
+    print("\n Review of Incorrect Answers:")
     for wa in wrong_answers:
         print(f"- Q: {wa['question']}")
         print(f"  Your Answer: {wa['your_answer']}")
         print(f"  Correct Answer: {wa['correct_answer']}\n")
 else:
-    print("🎉 Perfect score! Well done!")
+    print(" Perfect score! Well done!")
